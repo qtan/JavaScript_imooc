@@ -1,5 +1,6 @@
 function getByClass(clsName,parent){
   var oParent=parent?document.getElementById(parent):document,
+  //parent为真 传了父元素 没有就直接document
       eles=[],
       elements=oParent.getElementsByTagName('*');
 
