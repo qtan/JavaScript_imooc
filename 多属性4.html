@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>任意属性/链式运动</title>
-
+    <title>同时运动/链式运动</title>
     <style type="text/css">
         body,
         div {
@@ -74,7 +73,8 @@
         }
         var speed = 0;
         //var timer=null;
-        function startmove(obj, attr, target, fn) { //精简参数
+        //function startmove(obj,attr,target,fn){    //精简参数
+        function startmove(obj, json, fn) {
             window.clearInterval(obj.timer);
             // var oDiv=document.getElementById('div1');
             obj.timer = window.setInterval(function () {
@@ -101,7 +101,6 @@
             }, 20);
         }
     </script>
-
 </head>
 
 <body>
